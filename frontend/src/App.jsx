@@ -7,7 +7,6 @@ import CompletedPage from "./pages/CompletedPage.jsx";
 import ProgressPage from "./pages/ProgressPage.jsx";
 import CreatePage from "./pages/CreatePage.jsx";
 import NewPage from "./pages/NewPage.jsx";
-import NotFoundPage from "./pages/NotFoundPage.jsx";
 import ProfilePage from "./pages/ProfilePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegistrationPage from "./pages/RegistrationPage.jsx";
@@ -21,17 +20,16 @@ const App = () => {
                 <>
                     <BrowserRouter>
                         <Routes>
-                            <Route path="/" element={<DashboardPage/>}/>
+                            <Route path="/dashboard" element={<DashboardPage/>}/>
                             <Route path="/canceled" element={<CanceledPage/>}/>
                             <Route path="/completed" element={<CompletedPage/>}/>
                             <Route path="/progress" element={<ProgressPage/>}/>
                             <Route path="/create" element={<CreatePage/>}/>
                             <Route path="/all" element={<NewPage/>}/>
                             <Route path="/profile" element={<ProfilePage/>}/>
-                            <Route path="/login" element={<LoginPage/>}/>
-                            <Route path="/registration" element={<RegistrationPage/>}/>
-                            <Route path="/forgetpass" element={<ForgetPassPage/>}/>
-                            <Route path="*" element={<NotFoundPage/>}/>
+                            {/*<Route path="/login" element={<LoginPage/>}/>*/}
+                            {/*<Route path="/registration" element={<RegistrationPage/>}/>
+                            <Route path="/forgetpass" element={<ForgetPassPage/>}/>*/}
                         </Routes>
                     </BrowserRouter>
                     <Toaster/>
@@ -43,10 +41,9 @@ const App = () => {
                 <>
                     <BrowserRouter>
                         <Routes>
-                            <Route path="/login" element={<LoginPage/>}/>
+                            <Route path="/" element={<LoginPage/>}/>
                             <Route path="/registration" element={<RegistrationPage/>}/>
                             <Route path="/forgetpass" element={<ForgetPassPage/>}/>
-                            <Route path="*" element={<NotFoundPage/>}/>
                         </Routes>
                     </BrowserRouter>
                     <Toaster/>

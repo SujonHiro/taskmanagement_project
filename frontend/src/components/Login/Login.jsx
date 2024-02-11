@@ -19,7 +19,7 @@ const LoginBtn=()=>{
         //api
         LoginAPI(email,password).then((result)=>{
             if(result===true){
-                    window.location.href="/";
+                    window.location.href="/dashboard";
             }
         })
     }

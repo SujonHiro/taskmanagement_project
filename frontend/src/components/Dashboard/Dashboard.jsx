@@ -3,8 +3,8 @@ import {useSelector} from "react-redux";
 import {useEffect} from "react";
 import {taskStatusCountApi} from "../../ApiRequest/ApiRequest.js";
 const Dashboard = () => {
-    useEffect(() => {
-        taskStatusCountApi();
+    useEffect(  () => {
+         taskStatusCountApi();
     }, []);
 
     const summeryList = useSelector((state) => state.summery.value)

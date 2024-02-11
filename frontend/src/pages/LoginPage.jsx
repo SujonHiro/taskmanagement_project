@@ -7,7 +7,6 @@ const LoginPage = () => {
         <>
             <Suspense fallback={<LazyLoader/>}>
                 <Login/>
-
             </Suspense>
         </>
     );

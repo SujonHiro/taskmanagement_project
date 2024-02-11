@@ -61,7 +61,7 @@ const MasterLayout = (props) => {
                 </div>
             </nav>
             <div ref={(div)=>{sideNavRef=div}} className="side-nav-open">
-                <NavLink  className={(navData)=>navData.isActive?"side-bar-item-active side-bar-item mt-2":"side-bar-item mt-2"} to="/"  end>
+                <NavLink  className={(navData)=>navData.isActive?"side-bar-item-active side-bar-item mt-2":"side-bar-item mt-2"} to="/dashboard">
                     <RiDashboardLine className="side-bar-item-icon" />
                     <span className="side-bar-item-caption">Dashboard</span>
                 </NavLink>
